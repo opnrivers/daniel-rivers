@@ -1,4 +1,4 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = [{
   test: /\.js$/,
@@ -7,10 +7,10 @@ module.exports = [{
     loader: 'babel-loader',
     options: {
       presets: [
-        '@babel/preset-env'
-      ]
-    }
-  }
+        '@babel/preset-env',
+      ],
+    },
+  },
 }, {
   test: /\.(scss|css)$/,
   use: [
@@ -20,16 +20,16 @@ module.exports = [{
         importLoaders: 2,
         sourceMap: true,
         url: false,
-      }
+      },
     }, {
       loader: 'postcss-loader',
       options: {
         postcssOptions: {
-          plugins: ['autoprefixer',]
-        }
-      }
+          plugins: ['autoprefixer'],
+        },
+      },
     },
-    'sass-loader'
+    'sass-loader',
   ],
 }, {
   test: /\.(jpe?g|png|gif|svg)$/i,
