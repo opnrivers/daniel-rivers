@@ -15,7 +15,7 @@ module.exports = [
       from: 'src/images',
       to: 'images',
     }, {
-      from: 'src/index.html',
+      from: 'src/html',
       to: './',
     }],
   }),
