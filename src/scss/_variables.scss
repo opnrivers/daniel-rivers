@@ -12,7 +12,7 @@ $link-hover-decoration: underline !default;
 // Typography
 $font-family-sans-serif: 'Ubuntu', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-weight-light: 300 !default;
-$font-weight-normal: 300 !default;
+$font-weight-normal: 400 !default;
 $font-weight-bold: 400 !default;
 $headings-font-weight: $font-weight-bold !default;
 $display-font-weight: $font-weight-bold !default;
@@ -22,3 +22,9 @@ $btn-font-weight: $font-weight-bold !default;
 
 // Cards
 $card-border-width: 0 !default;
+
+// Modals
+$modal-content-border-width: 0 !default;
+$modal-content-border-radius: 0 !default;
+$modal-footer-border-width: 0 !default;
+$modal-transition: transform .1s ease-out !default;

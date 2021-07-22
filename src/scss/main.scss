@@ -5,11 +5,19 @@
 
 @import 'terminal';
 
-
+// tmp
 body a {
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+.btn-primary, .btn-primary:hover {
+  color: $white;
+}
+
+section.container {
+  min-height: 80vh;
 }
