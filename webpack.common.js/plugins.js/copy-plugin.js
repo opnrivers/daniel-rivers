@@ -5,9 +5,6 @@ module.exports = new CopyPlugin({
     from: 'src/images',
     to: 'images',
   }, {
-    from: 'src/html',
-    to: './',
-  }, {
     from: 'src/documents',
     to: 'documents',
   }],

@@ -20,4 +20,4 @@ const init = async () => {
 
 init()
   .then(() => console.info(`Hapi server running at ${index.info.uri}`))
-  .catch((err) => console.error('Hapi error starting index', err));
+  .catch((err) => console.error('Error starting Hapi', err));

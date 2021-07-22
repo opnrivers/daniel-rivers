@@ -36,6 +36,18 @@ const routing = {
       handler: async function handler(request, h) {
         return h.view('index', {}, {});
       },
+    }, {
+      method: 'GET',
+      path: '/cv',
+      handler: async function handler(request, h) {
+        return h.view('cv', {}, {});
+      },
+    }, {
+      method: 'GET',
+      path: '/contact',
+      handler: async function handler(request, h) {
+        return h.view('contact', {}, {});
+      },
     }]);
   },
 };
