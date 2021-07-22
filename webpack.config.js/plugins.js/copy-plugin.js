@@ -7,5 +7,8 @@ module.exports = new CopyPlugin({
   }, {
     from: 'src/html',
     to: './',
+  }, {
+    from: 'src/documents',
+    to: 'documents',
   }],
 });
