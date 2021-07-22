@@ -6,6 +6,10 @@
 @import 'terminal';
 
 // tmp
+body {
+  background: url(../images/blob.svg) no-repeat scroll 100% 0;
+}
+
 body a {
   text-decoration: none;
 
