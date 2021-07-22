@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --config webpack.dev.js --watch",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "start": "nodemon ./server"
   },
   "author": "Daniel Rivers",
   "license": "MIT",
@@ -35,6 +36,7 @@
     "imagemin-svgo": "^9.0.0",
     "mini-css-extract-plugin": "^2.1.0",
     "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
@@ -52,5 +54,11 @@
     "@hapi/vision": "^6.1.0",
     "bootstrap": "^5.0.2",
     "handlebars": "^4.7.7"
+  },
+  "nodemonConfig": {
+    "ignore": [],
+    "delay": 1000,
+    "ext": ".js, .css, html",
+    "legacyWatch": true
   }
 }
