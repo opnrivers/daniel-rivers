@@ -3,8 +3,6 @@
 @import 'variables';
 @import 'bootstrap';
 
-@import 'terminal';
-
 // tmp
 body {
   background: url(../images/blob.svg) no-repeat scroll 100% 0;
@@ -16,10 +14,6 @@ body a {
   &:hover {
     text-decoration: underline;
   }
-}
-
-.btn-primary, .btn-primary:hover {
-  color: $white;
 }
 
 section.container {
