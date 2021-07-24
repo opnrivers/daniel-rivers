@@ -1,0 +1,58 @@
+.dr-animated-navbar-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.dr-animated-navbar-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.dr-animated-navbar-icon span {
+  background: #e3f2fd;
+}
+
+.dr-animated-navbar-icon span:nth-child(1) {
+  top: 0;
+}
+
+.dr-animated-navbar-icon span:nth-child(2),
+.dr-animated-navbar-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.dr-animated-navbar-icon span:nth-child(4) {
+  top: 20px;
+}
+
+.dr-animated-navbar-icon.open span:nth-child(1) {
+  top: 11px;
+  width: 0;
+  left: 50%;
+}
+
+.dr-animated-navbar-icon.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.dr-animated-navbar-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.dr-animated-navbar-icon.open span:nth-child(4) {
+  top: 11px;
+  width: 0;
+  left: 50%;
+}
