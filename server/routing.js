@@ -1,12 +1,12 @@
 const Handlebars = require('handlebars');
-
+const routes = require('./routes');
 const { cnf } = require('./cnf');
 
 const routing = {
   name: 'routing',
   version: '1.0.0',
   register: async function register(server) {
-    const { root, templates, assets } = cnf;
+    const { root, templates } = cnf;
 
     server.views({
       engines: {
@@ -20,44 +20,7 @@ const routing = {
       helpersPath: [`${templates}/helpers`],
     });
 
-    server.route([{
-      method: 'GET',
-      path: '/{param*}',
-      handler: {
-        directory: {
-          path: assets,
-          listing: true,
-          index: false,
-        },
-      },
-    }, {
-      method: 'GET',
-      path: '/',
-      handler: async function handler(request, h) {
-        return h.view('index', {
-          home: true,
-          title: 'Home',
-        }, {});
-      },
-    }, {
-      method: 'GET',
-      path: '/cv',
-      handler: async function handler(request, h) {
-        return h.view('cv', {
-          cv: true,
-          title: 'CV',
-        }, {});
-      },
-    }, {
-      method: 'GET',
-      path: '/contact',
-      handler: async function handler(request, h) {
-        return h.view('contact', {
-          contact: true,
-          title: 'Contact',
-        }, {});
-      },
-    }]);
+    server.route(routes);
   },
 };
 
