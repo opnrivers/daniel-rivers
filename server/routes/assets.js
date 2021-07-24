@@ -4,7 +4,7 @@ const { assets } = cnf;
 
 module.exports = {
   method: 'GET',
-  path: '/{param*}',
+  path: '/assets/{param*}',
   handler: {
     directory: {
       path: assets,
