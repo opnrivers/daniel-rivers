@@ -1,13 +1,13 @@
 const { cnf } = require('../cnf');
 
-const { assets } = cnf;
+const { asset } = cnf;
 
 module.exports = {
   method: 'GET',
-  path: '/assets/{param*}',
+  path: '/asset/{any*}',
   handler: {
     directory: {
-      path: assets,
+      path: asset,
       listing: true,
       index: false,
     },

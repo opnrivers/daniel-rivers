@@ -3,7 +3,7 @@ const cnf = {
   port: 3333,
   root: __dirname,
   templates: `${__dirname}/templates`,
-  assets: `${__dirname}/../dist`,
+  asset: `${__dirname}/../dist`,
 };
 
 module.exports = { cnf };
