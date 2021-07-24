@@ -1,6 +1,10 @@
 // Color system
 $blue: #384a7f !default;
+$yellow: #f8c832 !default;
+$cyan: #90b4dc !default;
+
 $primary: $blue !default;
+$secondary: $yellow !default;
 
 // Links
 $link-color: $blue !default;
@@ -11,7 +15,7 @@ $link-hover-decoration: underline !default;
 $font-family-sans-serif: 'Ubuntu', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
-$font-weight-bold: 400 !default;
+$font-weight-bold: 500 !default;
 $headings-font-weight: $font-weight-bold !default;
 $display-font-weight: $font-weight-light !default;
 
