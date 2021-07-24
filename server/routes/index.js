@@ -1,4 +1,4 @@
-const assets = require('./asset');
+const assets = require('./assets');
 const home = require('./home');
 const cv = require('./cv');
 const contact = require('./contact');
