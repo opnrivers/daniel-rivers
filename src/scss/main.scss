@@ -3,11 +3,9 @@
 @import 'variables';
 @import 'bootstrap';
 
-// tmp
-body {
-  background: url(../images/blob.svg) no-repeat scroll 100% 0;
-}
+@import './home';
 
+// tmp
 body a {
   text-decoration: none;
 
