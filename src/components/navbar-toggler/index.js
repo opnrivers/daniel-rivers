@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './navbar-toggler.scss';
 
 const element = React.createElement;
-const toggler = document.querySelector('.navbar-toggler');
+const toggler = document.querySelector('.dr-react-navbar-toggler');
 
 const NavbarToggler = class NavbarToggler extends React.Component {
   constructor(props) {
@@ -39,4 +39,6 @@ const NavbarToggler = class NavbarToggler extends React.Component {
   }
 };
 
-export default ReactDOM.render(element(NavbarToggler), toggler);
+if (toggler) {
+  ReactDOM.render(element(NavbarToggler), toggler);
+}

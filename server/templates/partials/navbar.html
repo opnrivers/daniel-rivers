@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="/">Daniel Rivers</a>
 
     <button
-        class="navbar-toggler"
+        class="dr-react-navbar-toggler navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNavAltMarkup"
@@ -13,12 +13,11 @@
     ></button>
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link {{#if home}}active{{/if}}" aria-current="page"
-           href="/">Home</a>
-        <a class="nav-link {{#if cv}}active{{/if}}" href="/cv">CV</a>
-        <a class="nav-link {{#if contact}}active{{/if}}" href="/contact">Contact</a>
-      </div>
+      <nav class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/cv">CV</a>
+        <a class="nav-link" href="/contact">Contact</a>
+      </nav>
     </div>
   </div>
 </nav>
