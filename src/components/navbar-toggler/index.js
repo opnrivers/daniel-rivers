@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import '../scss/_navbar-icon.scss';
+import './navbar-toggler.scss';
 
 const element = React.createElement;
 const toggler = document.querySelector('.navbar-toggler');
@@ -29,7 +29,7 @@ class NavbarToggler extends React.Component {
     const t = this;
 
     return (
-      <div className={`dr-animated-navbar-icon${t.state.open ? ' open' : ''}`}>
+      <div className={`dr-navbar-toggler-icon${t.state.open ? ' open' : ''}`}>
         <span />
         <span />
         <span />
