@@ -39,4 +39,4 @@ class NavbarToggler extends React.Component {
   }
 }
 
-ReactDOM.render(element(NavbarToggler), toggler);
+export default ReactDOM.render(element(NavbarToggler), toggler);
