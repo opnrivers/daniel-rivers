@@ -1,0 +1,42 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import '../scss/_navbar-icon.scss';
+
+const element = React.createElement;
+const toggler = document.querySelector('.navbar-toggler');
+
+class NavbarToggler extends React.Component {
+  constructor(props) {
+    super(props);
+
+    const t = this;
+
+    t.state = { open: false };
+
+    toggler.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      if (toggler.classList.contains('collapsed')) {
+        t.setState({ open: false });
+      } else {
+        t.setState({ open: true });
+      }
+    });
+  }
+
+  render() {
+    const t = this;
+
+    return (
+      <div className={`dr-animated-navbar-icon${t.state.open ? ' open' : ''}`}>
+        <span />
+        <span />
+        <span />
+        <span />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(element(NavbarToggler), toggler);

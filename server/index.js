@@ -8,16 +8,16 @@ const { cnf } = require('./cnf');
 
 const { host, port } = cnf;
 
-const index = Hapi.Server({
+const server = Hapi.Server({
   host,
   port,
 });
 
 const init = async () => {
-  await index.register([Inert, Vision, routing]);
-  await index.start();
+  await server.register([Inert, Vision, routing]);
+  await server.start();
 };
 
 init()
-  .then(() => console.info(`Hapi server running at ${index.info.uri}`))
+  .then(() => console.info(`Hapi server running at ${server.info.uri}`))
   .catch((err) => console.error('Error starting Hapi', err));
